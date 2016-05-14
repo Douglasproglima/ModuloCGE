@@ -8,7 +8,10 @@ import javax.persistence.Entity;
 public class CGE extends GenericDomain{
 	@Column(length = 100, nullable = false)
 	private String nome;
-
+	
+	@Column(length=1, nullable = false)
+	private String tipoPessoa;
+	
 	@Column(length = 100)
 	private String nomeFantasia;
 	
@@ -62,6 +65,14 @@ public class CGE extends GenericDomain{
 		this.nome = nome;
 	}
 
+	public String getTipoPessoa() {
+		return tipoPessoa;
+	}
+	
+	public void setTipoPessoa(String tipoPessoa) {
+		this.tipoPessoa = tipoPessoa;
+	}
+	
 	public String getNomeFantasia() {
 		return nomeFantasia;
 	}

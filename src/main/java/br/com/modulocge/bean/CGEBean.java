@@ -23,12 +23,15 @@ public class CGEBean implements Serializable{
 	public CGE getCge() {
 		return cge;
 	}
+	
 	public void setCge(CGE cge) {
 		this.cge = cge;
 	}
+	
 	public List<CGE> getCges() {
 		return cges;
 	}
+	
 	public void setCges(List<CGE> cges) {
 		this.cges = cges;
 	}
@@ -96,5 +99,14 @@ public class CGEBean implements Serializable{
 			Messages.addGlobalError("Erro ao editar o registro, erro: "+ erro);
 			erro.printStackTrace();
 		}
-	}	
+	}
+	
+	public boolean exibirCampos(List<String> permissoes){
+		for(String permissao : permissoes){
+			
+			
+		}
+		
+		return false;
+	}
 }
